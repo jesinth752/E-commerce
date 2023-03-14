@@ -1,0 +1,345 @@
+.Section-header
+{
+  background-color:rgb(19, 192, 120);
+  height: 50px;
+  width: 100%;
+  font-size: larger;
+  color: white;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+
+  
+  
+}
+.Section-header div:first-child
+{
+  text-align: end;
+  width: 60%;
+  height: 80%;
+
+}
+.Section-header div:last-child
+{
+  
+  height:80%;
+  width:40%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right:5px;
+
+
+}
+.innercart
+{
+  width: 100%;
+  height: 100%;
+
+ 
+}
+.cartbadge
+{
+  background-color: yellow;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  z-index: 2;
+  position: fixed;
+  top:25px;
+  right: 5px;
+  font-size: smaller;
+  text-align: center;
+  font-weight: 600;
+}
+
+.carticon
+{
+ 
+font-size: 25px;
+
+}
+
+.contentbody
+{
+  width: 100%;
+  height: 100vh;
+  
+  display: flex;
+}
+.sidebarcontent
+{
+  width: 20%;
+  height: 100vh;
+  background-color: #222;
+   padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  position:fixed;
+  top: 50px;
+}
+.maincontent
+{
+  width: 80%;
+  height: 100%;
+   padding:20px 0 0 0;
+   background-color:white;
+   color: black;
+   text-align: center;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   position: relative;
+   left:20%;
+   top: 50px;
+}
+.shopcard
+{
+ 
+  margin-right: 5px;
+  width: 200px;
+  height: 300px;
+  border:2px solid rgb(19, 192, 120);
+  display: flex;
+  flex-direction: column;
+
+}
+.innercard
+{
+ width: 100%;
+ height: 85%;
+ padding-top: 2px;
+ flex-direction: column;
+ display: flex;
+ align-items: center;
+ 
+
+
+}
+.innercard div:first-child
+{
+  width: 70%;
+  height: 40%;
+  
+}
+.innercard div img
+{
+  width: 100%;
+  height: 100%;
+}
+.cartbutton
+{
+ width: 100%;
+ height: 15%;
+ background-color:rgb(19, 192, 120) ;
+ color: white;
+ border: none;
+ font-weight: 600;
+}
+.cartbutton:hover
+{
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+}
+.sdiv
+{
+  width: 100%;
+  height:70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.searchbox
+{
+  width: 80%;
+  height: 30px;
+  border: 2px solid rgb(19, 192, 120);
+  cursor: text;
+  border-radius: 5px;
+  margin-right: 4px;
+  background-color: transparent;
+  color: white;
+
+}
+.searchbtn
+{
+  cursor: pointer;
+  width: 10%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+.suggestionbox
+{
+  width: 100%;
+  font-weight: 500;
+  height:70px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: whitesmoke;
+  letter-spacing: 1px;
+  text-align: justify;
+  border-bottom: 1px solid white;
+
+  
+  
+}
+.suggestionbox ul
+{
+  display: flex;
+  list-style-type: none;
+
+}
+.suggestionbox ul li a
+{
+  color: whitesmoke;
+  text-decoration: none;
+  margin-right: 10px;
+ 
+}
+.brandscss
+{
+  width: 100%;
+  height: 350px;
+ color: white;
+ line-height: 30px;
+ border-bottom: 1px solid white;
+ margin-bottom: 10px;
+}
+.brandscss ul
+{
+  list-style-type:circle;
+}
+.brandscss ul li a{
+  color: white;
+  text-decoration: none;
+ 
+}
+.specificationbar
+{
+  width: 100%;
+  height: 300px;
+ color: white;
+}
+.specificationbar h4
+{
+  text-align: center;
+  
+}
+.specificationbar div{
+  width: 100%;
+  
+}
+.ramcard
+{
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.ramcard div{
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 10px;
+  width: 13.3%;
+  height: 22px;
+  border:none;
+  border-radius: 3px;
+  color: black;
+  background-color:  rgb(19, 192, 120);
+}
+.ramcard div:hover{
+  width: 14.3%;
+  height: 22.5px;
+}
+.romcard
+{
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.romcard div{
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 10px;
+  width: 13.3%;
+  height: 22px;
+  border:none;
+  border-radius: 3px;
+  color: black;
+  background-color:  rgb(19, 192, 120);
+}
+.romcard div:hover{
+  width: 14.3%;
+  height: 22.5px;
+}
+.text
+{
+  font-size: 15px;
+  text-align: center;
+}
+.productdetails
+{
+  height: 50%;
+}
+.displaycart
+{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+   top: 50px;
+}
+.outerdiv
+{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border: 2px solid black; 
+  margin-top:5px; 
+}
+.imagedivison{
+  width: 10%;
+  height: 100%;
+ 
+  
+}
+.imagedivison img{
+  width: 100%;
+  height: 100%;
+
+}
+.textdivison
+{
+  width: 50%;
+
+}
+.paybtn
+{
+  padding: 12px 32px;
+  background-color:rgb(19, 192, 120) ;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+}
+.emptymsg
+{
+  text-align: center;
+  width: 100%;
+  height: 10%;
+ 
+  padding: 20px;
+  font-size: 25px;
+}
