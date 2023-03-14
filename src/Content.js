@@ -1,17 +1,15 @@
 import Sidebar from "./sidebar";
 import Maincontent from "./maincontent";
 import Sidebarsrch from "./sidebarsrch";
-import {FaSearch,AiFillApple, FaApple} from "react-icons/fa";
+import {FaSearch} from "react-icons/fa";
 import Suggestions from "./suggestion";
 import Brands from "./brands";
 import Specs from "./specs";
 import Shoppingcard from "./shoppingcard";
 import Innercard from "./innercard";
 import Button from "./button";
-import Footer from "./footer";
 import { useContext } from "react";
 import cardContext from "./cardContext";
-import { BrowserRouter ,Route,Routes , Link} from 'react-router-dom';
 
 let flag=0;
 
@@ -45,13 +43,13 @@ const Content=(props)=>
   const  validate=(c,i)=>
   {
     if(c.indexOf(i)===-1)
-    {
+    
       return false;
      
-    }
-    else{
+    
+    else
       return true;
-    }
+    
   }
   const addtocart=(s,c,i)=>
   {
@@ -174,7 +172,7 @@ return(<div class={props.className}>
                                                              <Innercard className="innercard">
 
                                                              <div >
-                                                             <img src={require("./images/"+element.image)}></img>
+                                                             <img src={require("./images/"+element.image) }alt="productimage"></img>
                                                              </div>
                                                              <div class="productdetails">
                                                               <h3>{element.name}</h3>
@@ -190,7 +188,7 @@ return(<div class={props.className}>
                                       }
                                        else
                                        {  
-                                                      if(filter.indexOf(element.ram)!=-1 || filter.indexOf(element.rom)!=-1|| filter.indexOf(element.Brand)!=-1)
+                                                      if(filter.indexOf(element.ram)!==-1 || filter.indexOf(element.rom)!==-1|| filter.indexOf(element.Brand)!==-1)
                                                        {
                                                           
                                                           return(<Shoppingcard className="shopcard">
